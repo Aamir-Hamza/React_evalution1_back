@@ -1,0 +1,161 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #555;
+  }
+  
+  /* Question and Options */
+  .question-counter {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .question-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .option-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .option-button:hover {
+    background: #d9f7d9;
+  }
+  
+  .option-button.selected {
+    background: #d1e7ff;
+    border-color: #82b1ff;
+  }
+  
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .previous-button, .next-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .previous-button:hover, .next-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Result Styles */
+  .result-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .result-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .result-score {
+    font-size: 20px;
+    color: #28a745;
+    margin: 10px 0;
+  }
+  
+  .result-details {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .leaderboard-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .leaderboard-button:hover {
+    background: #e0a800;
+  }
+  
+  /* Confirmation Popup */
+  .confirmation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .confirmation-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #dc3545;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .confirmation-button:hover {
+    background: #b02a37;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 50px;
+  }
+  

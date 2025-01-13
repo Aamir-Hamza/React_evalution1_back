@@ -4,18 +4,21 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 import Leaderboard from './component/Leaderboard'
-import Qestion from './component/Qestion'
+import Home from './component/Home'
+
 import Quiz from './component/Quiz'
-import SetupQuiz from './component/SetupQuiz'
+import Navbar from './component/Navbar'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Navbar/>
     <Routes>
 
-      <Route path='/' element ={<SetupQuiz/>}/>
+      <Route path='/' element ={<Home/>}/>
       <Route path='/quiz' element ={<Quiz/>}/>
       <Route path='/leaderboard' element ={<Leaderboard/>}/>
     </Routes>
